@@ -23,8 +23,10 @@
 	  		</tbody>
 	  	</table>
 	  </div>
-	  	<app-edit v-if="!this.$store.state.seen3"></app-edit>
-	  	<app-add v-if="this.$store.state.seen3 && this.$store.state.seen2"></app-add>
+	  <!-- <app-add v-if="this.$store.state.seen3 && this.$store.state.seen2"></app-add> -->
+	  	<app-edit v-if="!this.$store.state.seen3 && !this.$store.state.seen4"></app-edit>
+	  	<app-add v-if="this.$store.state.seen4 "></app-add>
+
 	</div>
 </template>
 <script>
@@ -67,8 +69,9 @@ import Add from './AddRecord'
 			},
 			add(){
 				// this.$store.state.seen = true
-				this.$store.state.seen2 = true
-				this.$store.state.seen3 = true
+				this.$store.state.seen4 = true
+				this.$store.state.seen3 = false
+
 			}
 		}
 	}

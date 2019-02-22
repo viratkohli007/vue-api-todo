@@ -27,6 +27,8 @@ import _ from 'lodash'
       	this.$store.state.value = _.concat(this.$store.state.value, fd)
       	this.$store.state.seen = false
       	this.$store.state.seen2 = false
+      	this.$store.state.seen3 = true
+      	this.$store.state.seen4 = false
       }
       }
 	}

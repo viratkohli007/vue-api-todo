@@ -12,6 +12,7 @@ state: {
 	seen : false,
 	obj1 : [],
 	seen2 : false,
-	seen3: true
+	seen3: true,
+	seen4: false
 }
 })
