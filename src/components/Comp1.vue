@@ -62,7 +62,6 @@ import Add from './AddRecord'
          this.$store.state.seen3 = false
      this.$store.state.obj1 = _.find(this.$store.state.value, {'gtin14': event})
 
-
 			},
 			deleteq(event){
      this.$store.state.value = _.remove(this.$store.state.value, {'gtin14': event })
