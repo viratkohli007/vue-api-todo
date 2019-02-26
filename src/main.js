@@ -4,9 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import { store } from './store/store'
+import Modal from 'vue-js-modal'
 
 Vue.config.productionTip = false
 
+Vue.use(Modal)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
